@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, "../client/build")))
 app.use("/api/v1/auth", authRouter)
 app.use("/api/v1/category", categoryRouter)
 app.use("/api/v1/product", productRouter)
-
+//
 // rest api
 app.get("*", function (req, res) {
     res.sendFile(path.join("../client/dist/index.html"))
