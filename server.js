@@ -35,7 +35,7 @@ app.use("/api/v1/product", productRouter)
 
 // rest api
 app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname,"../client/build/index.html"))
+    res.sendFile(path.join(__dirname,"../client/dist/index.html"))
 })
 
 app.listen(parseInt(process.env.PORT), () => {
