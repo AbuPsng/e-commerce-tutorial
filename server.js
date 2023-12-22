@@ -12,6 +12,10 @@ import "fileURLToPath" form "URL"
 //configure env
 dotenv.config()
 
+//
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename)
+
 //connect to database
 connectDB()
 
